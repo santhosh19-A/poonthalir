@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poonthalir — Products | Natural Product Showcase</title>
+  <meta name="description" content="Explore Poonthalir handcrafted natural products made from nature's finest herbal ingredients." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logohd.png" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header id="siteHeader" class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="brand-logo-wrap" title="Poonthalir Home">
+        <div class="brand-logo-img-box">
+          <img src="../images/logo.png" alt="Poonthalir Logo" class="brand-logo-img" />
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link active">Home</a></li>
+        <li><a href="../index.html#story" class="nav-link">Our Story</a></li>
+        <li><a href="./index.html" class="nav-link">Products</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <a href="https://wa.me/919677374237" target="_blank" class="btn-primary" style="padding:8px 20px; font-size:0.85rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button id="mobileMenuBtn" style="display:none; background:none; border:none; padding:8px; cursor:pointer; color:#164B2D;" title="Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileNavDrawer" class="mobile-nav-drawer">
+      <a href="../index.html" style="display:block; padding:10px 0; color:#164B2D; font-weight:600; text-decoration:none;">Home</a>
+      <a href="../index.html#story" style="display:block; padding:10px 0; color:#333; font-weight:500; text-decoration:none;">Our Story</a>
+      <a href="./index.html" style="display:block; padding:10px 0; color:#333; font-weight:500; text-decoration:none;">Products</a>
+      <a href="../index.html#contact" style="display:block; padding:10px 0; color:#333; font-weight:500; text-decoration:none;">Contact Us</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-grid">
+        <div>
+          <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.9); padding:6px 16px; border-radius:20px; border:1px solid #FFC2D1; font-size:0.78rem; font-weight:700; color:#C94F72; margin-bottom:20px;">
+            ✨ 100% Handcrafted Natural Products
+          </div>
+          <h1 class="hero-headline">
+            Pure Nature.<br />Pure Beauty.
+          </h1>
+          <p class="hero-subtext">
+            Discover natural products crafted with care from nature’s finest ingredients. Pure, authentic & deeply nourishing.
+          </p>
+          <div class="hero-cta-group">
+            <a href="/products" class="btn-primary">Explore Products</a>
+            <a href="/#story" class="btn-secondary">Our Story</a>
+          </div>
+        </div>
+        <div class="showcase-stage">
+          <div class="water-dish-glow"></div>
+          <div style="position:absolute; right:10px; top:0; bottom:0; width:60px; background:linear-gradient(180deg, #FFF3CD, #FFE8A1); border-left:2px solid #E2B150; border-radius:0 24px 24px 0; opacity:0.85; display:flex; align-items:center; justify-content:center; writing-mode:vertical-rl; font-family:var(--font-serif); font-size:10px; font-weight:700; color:#164B2D; letter-spacing:2px; padding:10px;">
+            POONTHALIR BOTANICAL ESSENCE
+          </div>
+          <div class="showcase-products-grid">
+            <div class="showcase-card" onclick="openProductDetail(101)" style="cursor:pointer; transform:scale(1.05);">
+              <div style="width:140px; height:200px; border-radius:16px; overflow:hidden; background:#ffffff; padding:4px;">
+                <img src="/images/shampoo-main.jpg" alt="Root Strengthening Shampoo" style="width:100%; height:100%; object-fit:contain;" />
+              </div>
+              <div style="text-align:center; font-size:10px; font-weight:800; color:#164B2D; margin-top:4px;">Root Strengthening Shampoo</div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+              <div class="showcase-card" onclick="openProductDetail(101)" style="cursor:pointer;">
+                <div style="width:90px; height:90px; border-radius:12px; overflow:hidden; background:#ffffff; padding:2px;">
+                  <img src="/images/shampoo-ingredients.jpg" alt="Ingredients" style="width:100%; height:100%; object-fit:contain;" />
+                </div>
+              </div>
+              <div class="showcase-card" onclick="openProductDetail(101)" style="cursor:pointer;">
+                <div style="width:90px; height:90px; border-radius:12px; overflow:hidden; background:#ffffff; padding:2px;">
+                  <img src="/images/shampoo-benefits.jpg" alt="Benefits" style="width:100%; height:100%; object-fit:contain;" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section-padding" style="background:#FFFDF9;">
+      <div style="text-align:center;">
+        <span class="section-tag">Pure Botanical Formulations</span>
+        <h2 class="section-title">Our Products</h2>
+        <p class="section-subtitle">Handcrafted with organic wild-harvested herbs, floral hydrosols, and cold-pressed oils.</p>
+      </div>
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+
+    <section id="story" class="section-padding" style="background:#FFF5F6;">
+      <div style="max-width:960px; margin:0 auto; background:#ffffff; border-radius:32px; padding:48px 36px; border:2px solid #FFC2D1; box-shadow:var(--shadow-soft); text-align:center;">
+        <span class="section-tag">Our Heritage</span>
+        <h2 style="font-family:var(--font-serif); font-size:2.4rem; font-weight:800; color:#164B2D; margin-bottom:16px;">Nurturing Pure Beauty from Nature’s Heart</h2>
+        <p style="font-size:1rem; color:#555; line-height:1.7; margin-bottom:16px;">Poonthalir was born from a passion to celebrate pure, unadulterated nature. In a world crowded with harsh synthetic chemicals, we return to the timeless wisdom of traditional herbal remedies.</p>
+        <p style="font-size:1rem; color:#555; line-height:1.7; margin-bottom:28px;">Every Poonthalir formula is infused with love, handpicked floral hydrosols, cold-pressed botanical oils, and zero artificial preservatives. We believe skincare and hair care should nourish your body while respecting the earth.</p>
+        <a href="/products" class="btn-primary">Explore Our Products</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding" style="background:#FFFDF9;">
+      <div style="text-align:center;">
+        <span class="section-tag">Direct Communication</span>
+        <h2 class="section-title">Let’s Connect</h2>
+        <p class="section-subtitle">Have questions or want to place a custom order? Reach out directly via WhatsApp, phone, or email.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div style="font-size:2.5rem; margin-bottom:12px;">💬</div>
+          <h3 style="font-size:1.2rem; font-weight:700; color:#164B2D; margin-bottom:6px;">WhatsApp</h3>
+          <p style="font-size:0.85rem; color:#666; margin-bottom:16px;">Instant order assistance & queries</p>
+          <a href="https://wa.me/919677374237" target="_blank" class="btn-primary" style="padding:8px 20px; font-size:0.85rem;">Message on WhatsApp</a>
+        </div>
+        <div class="contact-card">
+          <div style="font-size:2.5rem; margin-bottom:12px;">📞</div>
+          <h3 style="font-size:1.2rem; font-weight:700; color:#164B2D; margin-bottom:6px;">Phone</h3>
+          <p style="font-size:0.85rem; color:#666; margin-bottom:16px;">+91 81228 29370</p>
+          <a href="tel:+918122829370" class="btn-secondary" style="padding:8px 20px; font-size:0.85rem;">Call Us</a>
+        </div>
+        <div class="contact-card">
+          <div style="font-size:2.5rem; margin-bottom:12px;">✉️</div>
+          <h3 style="font-size:1.2rem; font-weight:700; color:#164B2D; margin-bottom:6px;">Email</h3>
+          <p style="font-size:0.85rem; color:#666; margin-bottom:16px;">poonthalir971@gmail.com</p>
+          <a href="mailto:poonthalir971@gmail.com" class="btn-secondary" style="padding:8px 20px; font-size:0.85rem;">Send Email</a>
+        </div>
+        <div class="contact-card">
+          <div style="font-size:2.5rem; margin-bottom:12px;">📍</div>
+          <h3 style="font-size:1.2rem; font-weight:700; color:#164B2D; margin-bottom:6px;">Location</h3>
+          <p style="font-size:0.85rem; color:#666; margin-bottom:16px;">Tamil Nadu, India</p>
+          <span style="font-weight:700; font-size:0.85rem; color:#C94F72;">Artisanal Herbal Studio</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+          <img src="/images/logo.png" alt="Poonthalir logo" style="width:42px; height:42px; border-radius:50%;" />
+          <div style="font-family:var(--font-serif); font-size:1.2rem; font-weight:700; color:#ffffff;">Poonthalir</div>
+        </div>
+        <p style="font-size:0.85rem; color:rgba(255,255,255,0.7); line-height:1.6;">Pure herbal care inspired by nature’s wisdom, crafted for modern routines.</p>
+      </div>
+      <div>
+        <h4 style="font-family:var(--font-serif); font-size:1.1rem; color:#ffffff; margin-bottom:16px;">Quick Links</h4>
+        <ul style="list-style:none; line-height:2;">
+          <li><a href="/" style="color:rgba(255,255,255,0.7); text-decoration:none;">Home</a></li>
+          <li><a href="/#story" style="color:rgba(255,255,255,0.7); text-decoration:none;">Our Story</a></li>
+          <li><a href="/products" style="color:rgba(255,255,255,0.7); text-decoration:none;">Products</a></li>
+          <li><a href="/#contact" style="color:rgba(255,255,255,0.7); text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-family:var(--font-serif); font-size:1.1rem; color:#ffffff; margin-bottom:16px;">Contact Us</h4>
+        <div style="font-size:0.85rem; color:rgba(255,255,255,0.8); line-height:1.8;">
+          <div>+91 81228 29370</div>
+          <div>poonthalir971@gmail.com</div>
+          <div>Tamil Nadu, India</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Poonthalir. All Rights Reserved. Pure Nature. Pure Beauty.</div>
+  </footer>
+
+  <div id="imageZoomModal" class="zoom-modal-backdrop" onclick="if(event.target === this) closeImageZoomModal()">
+    <div class="zoom-modal-header">
+      <span id="zoomModalTitle" class="zoom-modal-title">Poonthalir Product Detail</span>
+      <button class="zoom-close-btn" onclick="closeImageZoomModal()" title="Close (Esc)">✕</button>
+    </div>
+    <div class="zoom-modal-body">
+      <img id="zoomModalImg" src="" alt="Zoomed Product View" class="zoom-modal-img" />
+    </div>
+    <div class="zoom-modal-controls">
+      <button id="zoomInBtn" class="zoom-ctrl-btn" onclick="adjustModalZoom(0.3)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        <span>Zoom In</span>
+      </button>
+      <button id="zoomOutBtn" class="zoom-ctrl-btn" onclick="adjustModalZoom(-0.3)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        <span>Zoom Out</span>
+      </button>
+      <button id="zoomResetBtn" class="zoom-ctrl-btn" onclick="resetModalZoom()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+        <span>Reset</span>
+      </button>
+    </div>
+  </div>
+
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>
